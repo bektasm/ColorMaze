@@ -1,7 +1,7 @@
 $( function() {
   $('.cell').click( function() {
-       $('.cell').css('background', 'white');
-    $(this).css('background', 'red');
+    $('.cell').removeClass('selected');
+    $(this).addClass("selected");
   } );
 } );
 

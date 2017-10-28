@@ -12,8 +12,17 @@
     
     height: 100px;
     width: 100px;
-    background-color: white;
     display: inline-block;
     border: solid 1px;
 
+}
+
+.selected {
+    
+    background-color: red;
+}
+
+.notSelected {
+    
+    background-color: white;
 }
