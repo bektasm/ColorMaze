@@ -1,35 +1,35 @@
+let row = 2;
+let column = 2;
+
 $(function () {
     $(document).keyup(function (event) {
-        
+
         $(".selected").removeClass('selected');
 
 
-        if (event.which == 37) {
-            
+        if (event.which == 37 && column > 1) {
+
             column--
 
-            
+        } else if (event.which == 38 && row > 1) {
 
-        } else if (event.which == 38) {
-            
             row--
 
+        } else if (event.which == 39 && column < 3) {
 
-
-        } else if (event.which == 39) {
-            
             column++
 
-        } else {
-            
+        } else if (event.which == 40 && row < 3) {
+
             row++
 
+        } else {
+
+            column = column;
+            row = row;
         }
-   
-        $('#'+row+'_'+column).addClass('selected');
-        
+
+        $('#' + row + '_' + column).addClass('selected');
+
     });
 });
-
-let row = 2;
-let column = 2;
